@@ -1,0 +1,139 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #e1e1e1;
+}
+button{
+    border-radius: 5px;
+    background-color: blue;
+    border:none;
+    padding: 7px 30px;
+    font-size: 18px;
+     
+    color: white;
+    
+}
+.submenu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-1{
+         display: block;
+         position: absolute;
+         background-color: white;
+         margin-top: -10px;
+         margin-left: -15px;
+         
+         
+}
+.menu-bar ul li:hover .submenu-1 ul{
+    
+    position: absolute;
+    display: block;
+    margin: 15px; 
+    background-color:white;
+}
+.menu-bar ul li:hover .submenu-1 ul li{
+    width: 150px;
+    border: 10px;
+     border-bottom: 1px dotted #fff; 
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu-1 ul li:first-child{
+    border-bottom:none ;
+
+}
+.menu-bar ul li:hover .submenu-1 ul li a:hover{
+    color: #b2ff00;
+}
+nav{
+    width: 100%;
+    /* height: 100px; */
+    overflow: auto;
+    background: rgb(247, 255, 250);
+    
+}
+ ul{
+    padding: 0 ;
+
+    margin: 4px 5px;
+    /* margin-right: 1px;
+    margin-bottom: 2px; */
+    /* margin: 0 0 250px; */
+    list-style: none;
+    
+}
+a:before,
+a:after  {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #b2ff00;
+    transition: 0.5s;
+}
+a:after{
+    left: 0;
+     bottom: -10px;
+}
+a:before{
+    right: 0;
+    top: -10px;
+}
+a:hover{
+    color: #b2ff00;
+}
+a:hover:after,
+a:hover:before{
+    width: 100%;
+}
+li{
+    float: right ;
+}
+ li a{
+
+    width: 50%;
+    display: block;
+     padding: 15px; 
+    text-decoration: none;
+    text-align: center;
+    font-family:  sans-serif;
+    color:rgb(15, 14, 14); 
+
+}
+li a:hover{
+    background: white;
+    text-transform: uppercase;
+    width: 80%;
+     
+    
+}
+.logo img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.submenu-2{
+
+    display: none;
+     /* margin-left: 80%;
+    margin-top: -25px;  */
+}
+/* .hello:hover .submenu-2{
+    display: block;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -20px;
+} */
+.hover1:hover .submenu-2{
+    display: block;
+    position: absolute;
+    margin-left: 137px;
+    margin-top: 40px;
+}
+.fa-angle-right{
+    float: right;
+    margin-right: 20px;
+}
